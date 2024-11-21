@@ -56,6 +56,7 @@ const Sidebar = () => {
           <div className="flex flex-col gap-2 p-2 rounded mt-2">
             {/* Current Jobs Button */}
             <Link
+              href="/currentJobs"
               className={`p-2 md:text-[14px] sm:text-[12px] rounded transition-all ${
                 activeButton === "current"
                   ? "bg-[#FFDCDF] text-black" // Active styling
@@ -68,6 +69,7 @@ const Sidebar = () => {
 
             {/* Past Jobs Button */}
             <Link
+              href="/pastJobs"
               className={`p-2 md:text-[14px] sm:text-[12px] rounded transition-all ${
                 activeButton === "past"
                   ? "bg-[#FFDCDF] text-black" // Active styling

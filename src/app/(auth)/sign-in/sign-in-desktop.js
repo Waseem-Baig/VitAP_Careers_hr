@@ -1,4 +1,5 @@
 import Image from "next/image";
+import Link from "next/link";
 import { useState } from "react";
 
 const OTPInput = ({ count }) => {
@@ -91,12 +92,12 @@ const SignIn = () => {
                 Send the code again
               </button>
             </div>
-            <button
-              className="font-montserrat text-[10px] text-[#FFFFFF] w-full font-bold h-[56px]] p-3 bg-[#650010]"
-              onClick={handleSendMail}
+            <Link
+              href="/currentJobs"
+              className="font-montserrat text-[12px] text-center text-[#FFFFFF] w-full font-bold h-[56px]] p-3 bg-[#650010]"
             >
               Verify
-            </button>
+            </Link>
           </div>
         </main>
       ) : (

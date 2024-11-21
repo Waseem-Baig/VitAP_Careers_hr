@@ -1,10 +1,10 @@
 "use client";
 
 import { useEffect, useState } from "react";
-import CurrentJobsDesktop from "./current-jobs-desktop";
-import CurrentJobsMobile from "./current-jobs-mobile";
+import PastJobsDesktop from "./past-jobs-desktop";
+import PastJobsMobile from "./past-jobs-mobile";
 
-const CurrentJobsWrapper = () => {
+const PastJobsWrapper = () => {
   const [isMobile, setIsMobile] = useState(false);
 
   useEffect(() => {
@@ -20,7 +20,7 @@ const CurrentJobsWrapper = () => {
     };
   }, []);
 
-  return isMobile ? <CurrentJobsMobile /> : <CurrentJobsDesktop />;
+  return isMobile ? <PastJobsMobile /> : <PastJobsDesktop />;
 };
 
-export default CurrentJobsWrapper;
+export default PastJobsWrapper;

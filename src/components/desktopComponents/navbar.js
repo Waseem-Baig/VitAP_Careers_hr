@@ -23,12 +23,18 @@ const Navbar = () => {
         ))}
       </div>
       <div className="flex gap-7 justify-center items-center">
-        <a className="text-[#650010] text-[16px] p-[11.5px_23px] border border-[#650010]">
+        <a
+          href="#"
+          className="text-[#650010] text-[16px] p-[11.5px_23px] border border-[#650010]"
+        >
           VITAP Home Page
         </a>
-        <button className="p-[11.5px_22px] bg-[#650010] text-[12px] text-white font-montserrat">
+        <Link
+          href="/sign-in"
+          className="p-[11.5px_22px] bg-[#650010] text-[12px] text-white font-montserrat"
+        >
           Logout
-        </button>
+        </Link>
       </div>
     </div>
   );

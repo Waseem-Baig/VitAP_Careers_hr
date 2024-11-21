@@ -1,6 +1,7 @@
 import { useState } from "react";
-import Header from "@/components/sign-in-mobile/sign-in-header";
-import Navbar from "@/components/sign-in-mobile/sign-in-navbar";
+import Header from "../../../components/mobileComponents/sign-in-header";
+import Navbar from "../../../components/mobileComponents/sign-in-navbar";
+import Link from "next/link";
 
 const OTPInput = ({ count }) => {
   return (
@@ -74,12 +75,13 @@ const SignInMobile = () => {
                   Send the code again
                 </button>
               </div>
-              <button
-                className="font-montserrat text-[10px] text-[#FFFFFF] w-full font-bold h-[28px] p-2 bg-[#650010]"
+              <Link
+                href="/currentJobs"
+                className="font-montserrat text-[12px] text-center text-[#FFFFFF] w-full font-bold h-[28px] p-2 bg-[#650010]"
                 onClick={handleSendMail}
               >
                 Verify
-              </button>
+              </Link>
             </div>
           </div>
         </main>
@@ -111,7 +113,7 @@ const SignInMobile = () => {
                 />
               </div>
               <button
-                className="font-montserrat text-[10px] text-[#FFFFFF] w-full h-[28px] p-2 bg-[#650010]"
+                className="font-montserrat text-[12px] text-center text-[#FFFFFF] w-full h-[28px] p-2 bg-[#650010]"
                 onClick={handleSendMail}
               >
                 Generate OTP
