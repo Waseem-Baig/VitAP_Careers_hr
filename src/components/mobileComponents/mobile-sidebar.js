@@ -25,7 +25,7 @@ const SidebarButton = ({ label, icon }) => (
   </button>
 );
 
-const Sidebar = ({ isOpen, onClose }) => {
+const MobileSidebar = ({ isOpen, onClose }) => {
   const [isActive, setIsActive] = useState();
   const [activeButton, setActiveButton] = useState("current");
 
@@ -164,4 +164,4 @@ const DashboardIcon = () => (
   </svg>
 );
 
-export default Sidebar;
+export default MobileSidebar;

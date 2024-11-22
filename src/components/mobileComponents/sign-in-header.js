@@ -1,4 +1,4 @@
-const Header = ({ onMenuClick }) => {
+const MobileHeader = ({ onMenuClick }) => {
   const logoSrc =
     "https://s3-alpha-sig.figma.com/img/0aa6/e4cb/4892bb3c77e837c57c302d14ed1d280c?Expires=1732492800&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=HbJ0wQjp2fGKVtQ4QzIoSbBlKJGaHSjSQn6sEfoJPnZhpMOFv8Uh3Pn-QLW20l73AJRxJOs7Vmu1e1EboMQYM~RJkqeMVy3cAXuQVjXfNQHfKsA5D17LIa6EBSAYZXiPHzLewqanHzNGFJg0yxvGXQ0L06IYiUuhag-HhI33sl-ARxWhXh0g3SMTMDp0JGyYD3W4rP6KwHoETS5Uxf6wS5PAuswpYTajA0sgnCVNejSQ74v8P1bTWxx0qnlq0rzP-TWARZhTSu5mWQGarQWYW5M76CTH5rcNxTWugBmzpFKueU6xqBHMRHGhW2QeB~Ti6y7sg-13D5Gtk5xmJ-UrwA__";
 
@@ -50,4 +50,4 @@ const Header = ({ onMenuClick }) => {
   );
 };
 
-export default Header;
+export default MobileHeader;

@@ -1,4 +1,4 @@
-const Navbar = () => {
+const MobileNavbar = () => {
   return (
     <div className="pl-5 flex items-center w-full h-10 gap-2">
       <button className="text-black font-montserrat text-xs font-medium">
@@ -23,4 +23,4 @@ const Navbar = () => {
   );
 };
 
-export default Navbar;
+export default MobileNavbar;
