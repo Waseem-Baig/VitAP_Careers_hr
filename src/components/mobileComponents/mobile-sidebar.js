@@ -74,11 +74,11 @@ const MobileSidebar = ({ isOpen, onClose }) => {
       </div>
       <div className="flex flex-col">
         <button
-          className={`text-[20px] sm:text-[12px] md:text-[16px] font-bold flex justify-center items-center gap-4 transition duration-300 
+          className={`text-[15px] sm:text-[12px] md:text-[16px] font-bold flex justify-center items-center gap-4 transition duration-300 
           ${isActive ? "bg-gray-100 text-black" : ""} p-2 rounded`}
           onClick={toggleActive}
         >
-          Jobs Posted{" "}
+          Jobs Posted
           <span>
             <svg
               xmlns="http://www.w3.org/2000/svg"
