@@ -1,10 +1,10 @@
 "use client";
 
 import { useEffect, useState } from "react";
-import PostJobMobile from "./postjob-mobile";
-import PostJobDesktop from "./postjob-desktop";
+import PostJobPdfMobile from "./postjob-pdf-mobile";
+import PostJobPdfDesktop from "./postjob-pdf-mobile";
 
-const PostJobWrapper = () => {
+const PostJobPdfWrapper = () => {
   const [isMobile, setIsMobile] = useState(false);
 
   useEffect(() => {
@@ -20,7 +20,7 @@ const PostJobWrapper = () => {
     };
   }, []);
 
-  return isMobile ? <PostJobMobile /> : <PostJobDesktop />;
+  return isMobile ? <PostJobPdfMobile /> : <PostJobPdfDesktop />;
 };
 
-export default PostJobWrapper;
+export default PostJobPdfWrapper;
