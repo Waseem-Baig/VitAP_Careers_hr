@@ -104,14 +104,14 @@ const DashboardIcon = () => {
 };
 
 const SidebarButton = ({ label, icon }) => (
-  <button className="flex justify-center items-center">
+  <Link href="/postJob" className="flex justify-center items-center">
     <div className="flex justify-between gap-8 md:gap-5 sm:gap-4 p-[12px_15px] md:p-[8px_12px] sm:p-[5px_8px]">
       <p className="text-white font-montserrat font-medium text-[14px] sm:text-[10px] md:text-[12px] lg:text-[16px]">
         {label}
       </p>
       {icon}
     </div>
-  </button>
+  </Link>
 );
 
 const ChevronIcon = () => (

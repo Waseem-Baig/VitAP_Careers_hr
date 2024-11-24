@@ -15,14 +15,14 @@ const Button = ({ children, className, onClick }) => (
 );
 
 const SidebarButton = ({ label, icon }) => (
-  <button className="flex justify-center items-center">
+  <Link href="/postJob" className="flex justify-center items-center">
     <div className="flex justify-between items-center gap-8 p-[10px_17px]">
       <p className="text-white text-center font-montserrat text-[14px] font-medium">
         {label}
       </p>
       {icon}
     </div>
-  </button>
+  </Link>
 );
 
 const MobileSidebar = ({ isOpen, onClose }) => {
